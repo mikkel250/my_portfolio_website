@@ -8,7 +8,9 @@
 
 <nav>
 	<div class="nav-container">
-		<Hamburger class="mobile-menu" bind:open />
+		<div class="hamburger-container">
+			<Hamburger class="mobile-menu" bind:open />
+		</div>
 
 		<a href="/" class="nav-logo" title="Back to homepage">Mikkel Ridley</a>
 		<div class="nav-links">
@@ -31,5 +33,8 @@
 	.container {
 		max-width: 1400px;
 		margin: 50px auto;
+	}
+	@media (min-width: 1024px) {
+		.hamburger-container { display: none; }
 	}
 </style>
