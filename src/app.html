@@ -10,3 +10,72 @@
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
+
+<style>
+	body {
+		background-position: left top;
+		font-family: "Inter", sans-serif;
+		margin: 0;
+		background-repeat: no-repeat;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+	
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	
+	:root {
+		--background: #ecebe8;
+	}
+	nav {
+		position: sticky;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 2rem 5vw 2rem 5vw;
+		background: white;
+		z-index: 1;
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	.nav-links {
+		display: none;
+  }
+  @media (min-width: 1024px) {
+		nav .nav-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.nav-links {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			margin: -1em 0;
+			flex: 1 0 auto;
+		}
+		.nav-links .link {
+			position: relative;
+			margin: 1em;
+			font-size: .85rem;
+			letter-spacing: 1px;
+			color: black;
+		}
+		.nav-logo {
+			position: relative;
+			line-height: 1;
+			font-size: 1.1rem;
+			color: black;
+		}
+    .hamburger-parent {
+      display: none;
+    }
+    .nav-links {
+      display: flex;
+    }
+  }
+</style>
