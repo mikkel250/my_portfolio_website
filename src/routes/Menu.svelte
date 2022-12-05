@@ -83,4 +83,7 @@
 		border-width: 1px;
 		height: 0;
 	}
+	@media (min-width: 1024px) {
+		.mobile-menu { display: none; }
+	}
 </style>
